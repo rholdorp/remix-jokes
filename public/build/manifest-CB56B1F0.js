@@ -1,1 +1,0 @@
-window.__remixManifest={"version":"cb56b1f0","entry":{"module":"/build/entry.client-UQMBK7JW.js","imports":["/build/_shared/chunk-7ZDELTTS.js"]},"routes":{"root":{"id":"root","path":"","module":"/build/root-KXKDI5DE.js","hasAction":false,"hasLoader":false,"hasCatchBoundary":false,"hasErrorBoundary":false}},"url":"/build/manifest-CB56B1F0.js"};
