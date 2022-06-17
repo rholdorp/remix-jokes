@@ -5,6 +5,8 @@ logs
 **/*.back.*
 
 node_modules
+public
+
 bower_components
 
 *.sublime*
