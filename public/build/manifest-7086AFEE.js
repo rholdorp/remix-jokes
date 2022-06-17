@@ -1,0 +1,1 @@
+window.__remixManifest={"version":"7086afee","entry":{"module":"/build/entry.client-WUKEJYFF.js","imports":["/build/_shared/chunk-VUST6OYQ.js"]},"routes":{"root":{"id":"root","path":"","module":"/build/root-RZ5M4XQG.js","hasAction":false,"hasLoader":false,"hasCatchBoundary":false,"hasErrorBoundary":false}},"url":"/build/manifest-7086AFEE.js"};
