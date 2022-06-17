@@ -89,6 +89,15 @@ function JokesRoute() {
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("h1", null, "J\u{1F92A}KES"), /* @__PURE__ */ React.createElement("main", null, /* @__PURE__ */ React.createElement(import_react3.Outlet, null)));
 }
 
+// route:/Users/ralph/dev/remix_sandbox/app/routes/jokes/$jokesId.tsx
+var jokesId_exports = {};
+__export(jokesId_exports, {
+  default: () => JokeRoute
+});
+function JokeRoute() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Here's your hilarious joke:"), /* @__PURE__ */ React.createElement("p", null, "Why don't you find hippopotamuses hiding in trees? They're really good at it."));
+}
+
 // route:/Users/ralph/dev/remix_sandbox/app/routes/jokes/index.tsx
 var jokes_exports2 = {};
 __export(jokes_exports2, {
@@ -98,8 +107,27 @@ function JokesIndexRoute() {
   return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Here's a random joke:"), /* @__PURE__ */ React.createElement("p", null, "I was wondering why the frisbee was getting bigger, then it hit me."));
 }
 
+// route:/Users/ralph/dev/remix_sandbox/app/routes/jokes/new.tsx
+var new_exports = {};
+__export(new_exports, {
+  default: () => NewJokeRoute
+});
+function NewJokeRoute() {
+  return /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("p", null, "Add your own hilarious joke"), /* @__PURE__ */ React.createElement("form", {
+    method: "post"
+  }, /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", null, "Name: ", /* @__PURE__ */ React.createElement("input", {
+    type: "text",
+    name: "name"
+  }))), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("label", null, "Content: ", /* @__PURE__ */ React.createElement("textarea", {
+    name: "content"
+  }))), /* @__PURE__ */ React.createElement("div", null, /* @__PURE__ */ React.createElement("button", {
+    type: "submit",
+    className: "button"
+  }, "Add"))));
+}
+
 // server-assets-manifest:@remix-run/dev/assets-manifest
-var assets_manifest_default = { "version": "ce6e7317", "entry": { "module": "/build/entry.client-HFIZF3VY.js", "imports": ["/build/_shared/chunk-HTBIVOYR.js", "/build/_shared/chunk-IYRIQ6PI.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-MMEALN2K.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-AGWCON3I.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/jokes": { "id": "routes/jokes", "parentId": "root", "path": "jokes", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/jokes-VBMJPMJ3.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/jokes/index": { "id": "routes/jokes/index", "parentId": "routes/jokes", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/jokes/index-TNG7CQPC.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-CE6E7317.js" };
+var assets_manifest_default = { "version": "6398eb83", "entry": { "module": "/build/entry.client-HFIZF3VY.js", "imports": ["/build/_shared/chunk-HTBIVOYR.js", "/build/_shared/chunk-IYRIQ6PI.js"] }, "routes": { "root": { "id": "root", "parentId": void 0, "path": "", "index": void 0, "caseSensitive": void 0, "module": "/build/root-MMEALN2K.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/index": { "id": "routes/index", "parentId": "root", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/index-AGWCON3I.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/jokes": { "id": "routes/jokes", "parentId": "root", "path": "jokes", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/jokes-VBMJPMJ3.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/jokes/$jokesId": { "id": "routes/jokes/$jokesId", "parentId": "routes/jokes", "path": ":jokesId", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/jokes/$jokesId-GEFC45Z6.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/jokes/index": { "id": "routes/jokes/index", "parentId": "routes/jokes", "path": void 0, "index": true, "caseSensitive": void 0, "module": "/build/routes/jokes/index-TNG7CQPC.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false }, "routes/jokes/new": { "id": "routes/jokes/new", "parentId": "routes/jokes", "path": "new", "index": void 0, "caseSensitive": void 0, "module": "/build/routes/jokes/new-ARVLJNTQ.js", "imports": void 0, "hasAction": false, "hasLoader": false, "hasCatchBoundary": false, "hasErrorBoundary": false } }, "url": "/build/manifest-6398EB83.js" };
 
 // server-entry-module:@remix-run/dev/server-build
 var entry = { module: entry_server_exports };
@@ -128,6 +156,14 @@ var routes = {
     caseSensitive: void 0,
     module: jokes_exports
   },
+  "routes/jokes/$jokesId": {
+    id: "routes/jokes/$jokesId",
+    parentId: "routes/jokes",
+    path: ":jokesId",
+    index: void 0,
+    caseSensitive: void 0,
+    module: jokesId_exports
+  },
   "routes/jokes/index": {
     id: "routes/jokes/index",
     parentId: "routes/jokes",
@@ -135,6 +171,14 @@ var routes = {
     index: true,
     caseSensitive: void 0,
     module: jokes_exports2
+  },
+  "routes/jokes/new": {
+    id: "routes/jokes/new",
+    parentId: "routes/jokes",
+    path: "new",
+    index: void 0,
+    caseSensitive: void 0,
+    module: new_exports
   }
 };
 module.exports = __toCommonJS(stdin_exports);

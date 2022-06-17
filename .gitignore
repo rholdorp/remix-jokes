@@ -6,6 +6,9 @@ logs
 
 node_modules
 public
+.cache
+build
+
 pu
 bower_components
 
