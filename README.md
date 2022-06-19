@@ -27,7 +27,29 @@ npm start
 ```
 
 project structure:
-| | |
-|---|---|
-| build/ | server side |
+
+|         |             |
+| ------- | ----------- |
+| build/  | server side |
 | public/ | client side |
+
+using Prisma as ORM:
+
+```sh
+npm install --save-dev prisma
+npm install @prisma/client
+```
+
+using SQLite:
+
+```sh
+npx prisma init --datasource-provider sqlite
+```
+
+setup schema
+
+push schema:
+
+```sh
+npx prisma db push
+```
