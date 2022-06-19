@@ -1,15 +1,11 @@
-export default function IndexRoute() {
-    return <div>Hello Index Route</div>;
-  }
+import type { LinksFunction } from "@remix-run/node";
 
-// export default function JokesIndexRoute() {
-//     return (
-//       <div>
-//         <p>Here's a random joke:</p>
-//         <p>
-//           I was wondering why the frisbee was getting bigger,
-//           then it hit me.
-//         </p>
-//       </div>
-//     );
-//   }
+import stylesUrl from "~/styles/index.css";
+
+export const links: LinksFunction = () => {
+  return [{ rel: "stylesheet", href: stylesUrl }];
+};
+
+export default function IndexRoute() {
+  return <div>Hello Index Route</div>;
+}
