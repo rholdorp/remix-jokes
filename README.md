@@ -53,3 +53,11 @@ push schema:
 ```sh
 npx prisma db push
 ```
+
+in connecting to the dbase take care not to start up new connect each time.
+
+.server file name convension tells compiler not to bundle for browser part
+
+load data into route module via load >> async function call
+
+like loader, the action function is a server only function to handle data mutations and other actions. (post, put, patch and delete)
