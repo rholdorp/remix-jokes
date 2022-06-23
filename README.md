@@ -61,3 +61,15 @@ in connecting to the dbase take care not to start up new connect each time.
 load data into route module via load >> async function call
 
 like loader, the action function is a server only function to handle data mutations and other actions. (post, put, patch and delete)
+
+install
+
+```sh
+npm install bcryptjs
+```
+
+install:
+
+```sh
+npm install --save-dev @types/bcryptjs
+```
