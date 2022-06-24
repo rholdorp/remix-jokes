@@ -6,6 +6,7 @@ logs
 
 node_modules
 public
+.env
 .cache
 build
 /prisma/dev.db
