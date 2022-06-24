@@ -5,15 +5,16 @@ import type {
   import { json } from "@remix-run/node";
   import {
     useActionData,
-    Link,
     useSearchParams,
+    Link,
   } from "@remix-run/react";
   
   import { db } from "~/utils/db.server";
-  import { 
-    login,
+  import {
     createUserSession,
-    } from "~/utils/session.server";
+    login,
+    register,
+  } from "~/utils/session.server";
   import stylesUrl from "~/styles/login.css";
   
   export const links: LinksFunction = () => {
@@ -33,7 +34,6 @@ import type {
   }
   
   function validateUrl(url: any) {
-    console.log(url);
     let urls = ["/jokes", "/", "https://remix.run"];
     if (urls.includes(url)) {
       return url;
@@ -89,7 +89,6 @@ import type {
     switch (loginType) {
       case "login": {
         const user = await login({ username, password });
-        console.log({ user });
         if (!user) {
           return badRequest({
             fields,
@@ -108,12 +107,14 @@ import type {
             formError: `User with username ${username} already exists`,
           });
         }
-        // create the user
-        // create their session and redirect to /jokes
-        return badRequest({
-          fields,
-          formError: "Not implemented",
-        });
+        const user = await register({ username, password });
+        if (!user) {
+          return badRequest({
+            fields,
+            formError: `Something went wrong trying to create a new user.`,
+          });
+        }
+        return createUserSession(user.id, redirectTo);
       }
       default: {
         return badRequest({
